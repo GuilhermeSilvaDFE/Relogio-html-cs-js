@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: monospace;
+  color: rgb(188, 196, 198);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(75deg, rgb(0, 234, 255), rgb(128, 226, 235), rgb(159, 221, 249));
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+body::before {
+  content: "";
+  display: block;
+  background-color: azure;
+  width: 400px;
+  height: 100px;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: -1;
+  transform: translatey(-50%);
+  transform: translateX(-50%);
+}
+
+#Relogio {
+  background-color: rgba(0, 255, 247, 0.537);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.377);
+}
+#Relogio div {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.562);
+  border-top: 4px solid rgba(63, 66, 67, 0.989);
+  flex: 10%;
+}
+#Relogio div #Horas, #Relogio div #Minutos, #Relogio div #Segundos {
+  font-size: 60px;
+}/*# sourceMappingURL=style.css.map */
